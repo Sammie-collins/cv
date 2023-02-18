@@ -1,0 +1,670 @@
+/* styling begins... */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* the home page */
+.home-page{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border: 2px solid ;
+}
+
+
+/* let's style the nav bar */
+
+.nav{
+    height: 50px;
+    width: 100%;
+    position:sticky;
+    top: 0;
+
+}
+
+/* the logo */
+.logo{
+    font-weight: bolder;
+    color: orangered;
+    width: 40%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+/* the nav-bar styling begins....... */
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    line-height: 50px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* .nav-bar{
+    float: right;
+    width: 60%;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+ 
+}
+
+ul li a{
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    margin-left: 1.8rem;
+    font-weight: bold;
+    font-size: 19px;
+} */
+ul li a::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 2px;
+    margin-bottom: 0px;
+    background-color: white;
+    transition: width 150ms ease-out;
+    /* margin-left: 65px; */
+}
+
+ul li a:hover::after{
+    width: 2rem;
+}
+
+ul li a:active{
+    color: orange;
+
+}
+
+/* landing  */
+.landing{
+    width: 90%;
+    height: 500px;
+    /* border: 1px solid; */
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    margin: auto;
+    bottom: 10%;
+
+}
+
+.landing-content{
+    /* border: 1px solid black; */
+    position:absolute;
+    top: 15%;
+    right: 10%;
+    width: 80%;
+    height: 350px;
+
+}
+
+.text{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.text h1{
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
+}
+
+.text p{
+    padding-top: 20px;
+}
+
+center{
+    /* border: 2px solid black; */
+    margin-top: 10%;
+}
+
+button{
+    padding: 15px 40px;
+    border: 1px solid orangered;
+    font-weight: bolder;
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px gray;
+    transition: background-color 350ms ease-in-out;
+}
+
+button:hover{
+    background-color: orangered;
+    color: white;
+    transform: rotate(360deg);
+}
+
+.but {
+    animation-name: samuel;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes samuel {
+    0%{transform: rotate(20deg)}
+    10%{transform: rotate(70deg);}
+    15%{transform: rotate(90deg);}
+    25%{transform: rotate(110deg);}
+    35%{transform: rotate(150deg)}
+    40%{transform: rotate(200deg);}
+    45%{transform: rotate(220deg);}
+    50%{transform: rotate(360deg);}
+    55%{transform: rotate(220deg);}
+    60%{transform: rotate(200deg);}
+    70%{transform: rotate(200deg);}
+    75%{transform: rotate(150deg)}
+    80%{transform: rotate(110deg);}
+    90%{transform: rotate(70deg);}
+    95%{transform: rotate(20deg)}
+    100%{transform: rotate(0deg)}
+
+    
+
+}
+
+
+
+
+/* ABOUT US.. */
+.about-us{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../img/bg4.jpeg);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+/* ABOUT TEXT */
+.about-text{
+    width: 50%;
+    float: left;
+    height: 70vh;
+    color: white;
+} 
+
+h3{
+    font-size: 22px;
+    padding: 5px 5px;
+    width: fit-content;
+    /* border: 1px solid ; */
+    border-left: 4px solid orangered;
+    border-right: 4px solid orangered;
+    margin-bottom: 5%;
+}
+
+.text-one{
+    font-size: 1.2rem;
+    padding: 1.8rem;
+    text-align: justify;
+}
+
+#text::first-letter{
+    font-size: 200%;
+}
+
+#about-btn{
+    margin-top: 2.8rem;
+    border: none;
+    background-color: orangered;
+}
+#about-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* ABOUT IMAGE */
+
+.about-image{
+    width: 50%;
+    height: 70vh;
+    float: right;
+}
+
+img{
+    width: 100%;
+    height: 70vh;
+}
+
+/* NEWSLETTER */
+.newsletter{
+    float: left;
+    height: 25vh;
+    width: 100%;
+    /* background-color: gray; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.newsletter-container{
+    width: 80%;
+    height: 20vh;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 5px #f3f3f3;
+    position: absolute;
+    bottom: 50%;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-txt{
+    width: 30%;
+    height: 20vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+}
+span{
+        border-left: 1px solid #f3f3f3;
+        padding-left: 10px;
+}
+
+
+.newsletter-search{
+    width: 50%;
+    height: 20vh;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type]{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+}
+
+
+.newsletter-button{
+    width: 20%;
+    height: 20vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newsletter-btn{
+    color: white;
+    background-color: orange;
+}
+
+
+.btn2{
+    background-color: aqua;
+}
+
+/* OUR SERVICES */
+.our-services{
+    /* width: fit-content; */
+    height: 5vh;
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    color: white;
+
+}
+/* SERVICES... */
+
+.services{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url(../img/bg5.jpeg);
+}
+
+
+/* LET'S STYLE THE CONTENT */
+
+
+
+.services-one{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    position: absolute;
+    bottom: 25%;
+
+
+}
+
+.con{
+  width: 30%;
+  height: 30vh;
+  /* border: 1px solid; */
+  background-color: transparent;
+ 
+  float: left;
+    position: relative;
+}
+
+.con-one{
+    width: 100%;
+    height: 21vh;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 7px #f3f3f3;
+    border-radius: 10px 3px 3px 10px;
+    
+}
+
+.con-one p{
+    width: 60%;
+    text-align: start;
+    padding: 0.8rem;
+    color: white;
+}
+
+.con-one h2{
+    padding: 0.6rem;
+    color: white;
+}
+
+
+.con-two{
+    width: 100%;
+    height: 7vh;
+    background-color:transparent;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px dashed #f3f3f3;
+    border-left: 1px dashed #f3f3f3;
+    border-right: 1px dashed #f3f3f3;
+}
+
+#booking{
+   border: none;
+   border-left: 2px solid white;
+   padding: 0rem .5rem;
+}
+
+#booking::after{
+    content: "";
+    width: 20%;
+    height: 2px;
+    display: block;
+    background-color: #fff;
+    transition: width .5s ease-out;
+}
+
+#booking:hover::after{
+    width: 50%;
+
+}
+
+/* service two */
+
+.services-two{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    box-shadow: 1px 1px 9px orange;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+.services-two h5{
+    color: orange;
+    font-weight: bolder;
+    font-size: 19px;
+    margin-bottom: 0.5rem;
+}
+
+.services-two p{
+    color: white;
+
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.footer-top{
+    width: 100%;
+    height: 50vh;
+    border: 1px solid gray;
+    
+}
+
+.clients-1{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-1 h5{
+    color: orangered;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+.clients-1 p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.clients-2{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    gap: 50px;
+}
+
+.box{
+    width: 30%;
+    height: 30vh;
+    border-radius: 5px;
+    background-color: white;
+    padding: .6rem;
+    
+}
+
+.row-one{
+    height: 10vh;
+    width: 100%;
+    padding: 5px;
+}
+
+.row-two{
+    padding: 1rem .5rem;
+}
+
+.client-img{
+ 
+    width: 20%;
+    height: 10vh;
+    float: left;
+}
+.client-img img{
+    width: 100%;
+    height: 10vh;
+    border-radius: 200px;
+}
+.client-name{
+    background-color: white;
+    width: 80%;
+    height: 10vh;
+    float: left;
+   padding: .9rem 1rem ;
+   font-weight: bolder;
+   text-align: left;
+
+}
+
+.client-name h6{
+    color: orangered;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+.clients-3{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linebreak{
+    border-radius: 10px;
+    height: 5px;
+    width: 30%;
+    background-color: orangered;
+}
+
+/* footer bottom begins from here*/
+
+.footer-bottom{
+    background-color: rgba(255, 255, 255, .9);
+    width: 100%;
+    height: 50vh;
+    border-radius: 15px 15px 0px 0px;
+  
+}
+.footer-left-bottom{
+    width: 20%;
+    height: 30vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-2{
+    font-weight: bolder;
+    color: orangered;
+    font-size: 20px;
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+}
+
+
+.social-media{
+    display: flex;
+    gap: 20px;
+}
+
+
+#fa{
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+/* FOOTER RIGHT BOTTOM */
+
+
+.footer-right-bottom{
+    width: 80%;
+    height: 30vh;
+    /* border: 2px dotted red; */
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.sup ul{
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+#con-sup{
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+/* FOOTER BOTTOM BOTTOM */
+
+.footer-bottom-bottom{
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    place-content: center;
+}
